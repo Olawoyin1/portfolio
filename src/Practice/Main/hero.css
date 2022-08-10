@@ -135,8 +135,12 @@ h1{
     }
 }
 
-
-
+@media (max-width: 1024px){
+    .hero_section{
+        height: 35vh;
+        /* background-color: red; */
+    }
+}
 
 
 @media (max-width: 960px) {
@@ -148,10 +152,7 @@ h1{
         font-size: 14px;
     }
 
-    .hero_section{
-        height: 35vh;
-        /* background-color: red; */
-    }
+   
 }
 
 
