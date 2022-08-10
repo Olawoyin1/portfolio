@@ -1,5 +1,5 @@
 .hero_section{
-    min-height: calc(100vh - 55px);
+    height: calc(100vh - 55px);
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 85%;
@@ -149,7 +149,8 @@ h1{
     }
 
     .hero_section{
-        min-height: 35vh;
+        height: 35vh;
+        /* background-color: red; */
     }
 }
 
