@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+@font-face {
+    font-family: monts;
+    src: url('./fonts/Montserrat-Regular.ttf');
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: monts;
+    src: url('./fonts/Montserrat-Bold.ttf');
+    font-weight: 800;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+    font-family: raleway;
+    src: url("./fonts/Raleway-Regular.ttf");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+    font-family: raleway;
+    src: url('./fonts/Raleway-Bold.ttf');
+    font-weight: 800;
 }
 
-.App-link {
-  color: #61dafb;
+*{
+    font-family: monts;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.body{
+    
+    background-image: linear-gradient(45deg, #dcf8ef, #fee2f8);
+    transition: 200ms ease-in-out;
+    
 }
+
+.body.dark{
+    background-image: linear-gradient(20deg, #414141, #000);
+    color: #fff;
+}
+
+.body.dark .links{
+    color: #fff;
+}
+
+.body.dark .socials a{
+    color: #fff;
+}
+
+.body.dark .navigation{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

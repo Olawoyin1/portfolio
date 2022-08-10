@@ -1,0 +1,47 @@
+nav{
+    width: 85%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    gap: 2.2rem;
+}
+
+.links{
+    text-decoration: none;
+    color: #444;
+}
+
+.links.active{
+    color: black;
+    font-family: montsbold;
+}
+
+.main{
+    height: 81vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.btn{
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
+    background-color: green;
+}
+
+.footer{
+    text-align: center;
+    background-color: #444;
+    padding: 2px;
+    color: #fff;
+}
+
