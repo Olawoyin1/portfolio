@@ -4,6 +4,17 @@
     font-weight: 800;
 }
 
+/* @keyframes showMail {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+
+} */
+
 
 .nav{
     /* background-color: #fff; */
@@ -73,7 +84,7 @@ ul{
     /* background-color: transparent; */
     background-image: none;
     color: #000;
-    border: 1px solid #e8491d;
+    border: 1px solid #faccf1;
     box-shadow: none;
 }
 

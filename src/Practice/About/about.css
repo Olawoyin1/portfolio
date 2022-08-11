@@ -1,0 +1,6 @@
+.about-page{
+    height: 100vh;
+    border: 2px solid green;
+    display: grid;
+    place-content: center;
+}

@@ -1,8 +1,11 @@
 import React from 'react';
 import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import './App.css';
+import About from './Practice/About/About';
+import Contact from './Practice/Contact/Contact';
 import Hero from './Practice/Main/Hero';
 import Navbar from './Practice/Navbar/Navbar';
+import Portfolio from './Practice/Portfolio/Portfolio';
 
 
 
@@ -22,6 +25,9 @@ function App() {
         handleToggle = {handleToggle}
       />
       <Hero />
+      <About />
+      <Portfolio />
+      <Contact />
     </div>
   );
 }

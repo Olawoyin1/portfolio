@@ -30,12 +30,12 @@ export default function Navbar({toggle, handleToggle}) {
  
 
   return (
-    <div className={scroll ? "nav scrolled" : "nav"}>
-      <nav>
+    <div className={scroll ? "nav scrolled" : "nav" } >
+      <nav >
 
         <div className="mail">
           {/* <i className="uil uil-envelope"></i> */}
-          <img src="../../images/email.png" alt="" />
+          <img src="../../images/email.png" className='mail-image' alt="" />
           <p>yustee2017@gmail.com</p>
         </div>
 

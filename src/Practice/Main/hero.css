@@ -1,5 +1,5 @@
 .hero_section{
-    height: calc(100vh - 55px);
+    min-height: calc(100vh - 55px);
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: 85%;
@@ -9,15 +9,16 @@
 .btn{
     padding: 9px 15px;
     display: inline-block;
-    width: 100px;
+    width: 150px;
     border: none;
     background-image: linear-gradient(20deg, #dc6b6b, #845de1);
-    color: #fff;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.6);
     font-size: 14px;
     transition: .5s ease-in-out;
     cursor: pointer;
+    color: #fff;
 }
+
 
 .btn:hover{
     background-image: none;
@@ -137,7 +138,7 @@ h1{
 
 @media (max-width: 1024px){
     .hero_section{
-        height: 35vh;
+        min-height: 45vh;
         /* background-color: red; */
     }
 }
@@ -155,12 +156,19 @@ h1{
    
 }
 
+@media (max-width: 920px){
+    .socials a span{
+        display: none;
+    }
+}
+
 
 
 
 @media (max-width: 700px){
     .hero_section{
         grid-template-columns: 1fr;
+        /* height: fit-content; */
     }
 
     .hero_left{

@@ -20,11 +20,17 @@
     font-weight: 800;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     font-family: monts;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
     /* border: 1px solid red; */
 }
 
@@ -37,7 +43,7 @@
 }
 
 .body.dark{
-    background-image: linear-gradient(20deg, #414141, #000);
+    background-image: linear-gradient(330deg, #18191a, #1e1a20);
     color: #fff;
 }
 
