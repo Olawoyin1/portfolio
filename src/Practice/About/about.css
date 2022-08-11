@@ -9,6 +9,10 @@
     place-content: center;
 
 
+    background: linear-gradient(10deg, #7ee7faae 0%, #eec0c6d1 100%);
+
+    clip-path: polygon(21% 4%, 100% 0, 100% 100%, 82% 96%, 0 100%, 0 0);
+
 
 
 

@@ -45,9 +45,10 @@ export default function Contact() {
                 <textarea  placeholder='Message' />
                 <i className="uil uil-envelope-edit icon"></i>
               </div>
-              <button className='btn send'>
+              <button type='submit' className='btn send'>
                   <p>Send</p> 
-                  <i class="uil uil-angle-double-right animated-icon"></i></button>
+                  <i class="uil uil-angle-double-right animated-icon"></i>
+                </button>
             </form>
           </div>
 
