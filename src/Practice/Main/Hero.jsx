@@ -11,7 +11,7 @@ export default function Hero() {
                 <p className='line'>HEY THERE !</p>
                 <h1>I'm <span className="colored">Olawoyin</span> Gbolahan</h1>
                 <p className='about'>A frontend Dev and a Backend dev with high level of experience in web designing and development. <br /><br /> I care deeply about creating a world class website to my clients, My custom built websiteare fast loading accessible and very easy to manage</p>
-                <a href='#contact_me' className='btn'>Let's Connect <i class="uil uil-arrow-circle-right"></i></a>
+                <a href='#contact_me' className='btn btn-con'>Let's Connect <i class="uil uil-arrow-circle-right"></i></a>
 
                 <div className="socials">
                     <a href='#'>

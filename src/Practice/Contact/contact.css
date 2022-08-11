@@ -1,12 +1,21 @@
 .contact-me{
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    /* background-color: #ccc; */
-    background-image: linear-gradient(45deg, #dcf8ef, #fee2f8);
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    clip-path: polygon(50% 0%, 84% 5%, 100% 0, 100% 100%, 64% 100%, 39% 100%, 0 100%, 0 0, 14% 3%);
+    padding-bottom: 1rem;
+
 }
+
+.body.dark .contact-me{
+    
+    background-image: linear-gradient(30deg, #141e30 30%, #0a0d14 100% );
+}
+
+
 
 .connect{
     width: 300px;
@@ -19,9 +28,10 @@
     width: 85%;
     margin: 0 auto;
     border-radius: 5rem;
-    overflow: hidden;
+    /* overflow: hidden; */
     box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(10rem);
+    position: relative;
+    min-height: 300px;
     
 }
 
@@ -114,6 +124,14 @@ form{
 }
 
 
+.transparent{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border: 1px solid red;
+    z-index: -1;
+    backdrop-filter: blur(10rem);
+}
 
 
 
@@ -137,5 +155,54 @@ form{
     }
     100%{
         transform: translateX(5px);
+    }
+}
+
+@media (max-width: 1024px){
+    .contact-me{
+        min-height: 45vh;
+        /* background-color: red; */
+    }
+}
+
+@media (max-width: 850px){
+    .flex{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    .connect{
+        width: 170px;
+        padding: 1rem;
+    }
+}
+
+@media (max-width: 500px){
+    
+    .flex2{
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .flex{
+        border-radius: 15px;
+    }
+
+
+    .contact-right{
+        display: block;
+        text-align: center;
+    }
+    
+    .btn.send{
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 400px){
+    .contact-right h1{
+        font-size: 1.5rem;
     }
 }

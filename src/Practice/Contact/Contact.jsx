@@ -50,6 +50,8 @@ export default function Contact() {
                   <i class="uil uil-angle-double-right animated-icon"></i></button>
             </form>
           </div>
+
+          {/* <div className="transparent"></div> */}
         </div>
     </div>
   )

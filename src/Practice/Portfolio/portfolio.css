@@ -2,6 +2,48 @@
     height: 100vh;
     display: grid;
     place-content: center;
-    background-color: grey;
-    clip-path: polygon(0 0, 100% 0,100% 265%, 0 100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1024px){
+    .portfolio{
+        min-height: 45vh;
+        /* background-color: red; */
+    }
 }
