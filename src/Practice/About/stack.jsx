@@ -1,6 +1,8 @@
 import React from 'react'
 import Backend from './Backend'
 import BackSkill from './BackSkill'
+import Skill from './Skill'
+import Skills from './Frontend'
 
 export default function Stack({ stack, stackIcon}) {
 
@@ -10,6 +12,15 @@ export default function Stack({ stack, stackIcon}) {
   const handleToggle = () =>{
     setToggle(!toggle)
   }
+
+  const All = Skills.map(skill => {
+    return(
+      <Skill 
+        key={skill.id}
+        {...skill}
+      />
+    )
+  })
 
   
   const AllBackend = Backend.map(skill => {
@@ -31,7 +42,7 @@ export default function Stack({ stack, stackIcon}) {
           <i className={toggle ? "uil uil-angle-down rotate" : "uil uil-angle-down"} onClick={handleToggle}></i>
         </div>
         {toggle && <div className="each">
-          {AllBackend}
+          {All}
         </div>}
     </div>
   )

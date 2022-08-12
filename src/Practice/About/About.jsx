@@ -1,7 +1,7 @@
 import React from 'react'
 import './about.css'
-import Skill from './Skill'
-import Skills from './Frontend'
+// import Skill from './Skill'
+// import Skills from './Frontend'
 // import Backend from './Backend'
 // import BackSkill from './BackSkill'
 import Stacks from './All'
@@ -26,14 +26,14 @@ export default function About() {
     )
   })
 
-  const All = Skills.map(skill => {
-    return(
-      <Skill 
-        key={skill.id}
-        {...skill}
-      />
-    )
-  })
+  // const All = Skills.map(skill => {
+  //   return(
+  //     <Skill 
+  //       key={skill.id}
+  //       {...skill}
+  //     />
+  //   )
+  // })
 
   // const AllBackend = Backend.map(skill => {
   //   return(
