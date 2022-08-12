@@ -37,6 +37,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    -webkit-column-gap: 0.7rem;
     align-items: flex-start;
     gap: .7rem;
     max-width: fit-content;

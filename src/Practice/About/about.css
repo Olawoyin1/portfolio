@@ -182,10 +182,16 @@
     align-items: center;
 }
 
+.lang h3{
+    font-size: 1rem;
+    color: #444;
+}
+
 .level{
     height: 10px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.459);
     border-radius: 10px;
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.104),inset 5px 5px 10px rgba(70, 70, 70, 0.059);
 }
 
 .roll{
