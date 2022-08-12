@@ -16,6 +16,10 @@
 
 }
 
+.body.dark .about-page{
+    background: linear-gradient(10deg, #1616169a 0%, #2c2c2c85 100%);
+}
+
 .transparent{
     /* border: 1px solid red; */
     width: 120px;
@@ -56,9 +60,9 @@
     /* border: 2px solid green; */
 }
 
-.grid *{
-    /* border: 2px solid green; */
-}
+/* .grid *{
+    /* border: 2px solid green; 
+} */
 
 .about-left{
     display: flex;
@@ -145,9 +149,9 @@
     text-align: center;
 }
 
-.frontend{
-    /* border: 1px solid red; */
-}
+/* .frontend{
+    /* border: 1px solid red; 
+} */
 
 
 
@@ -256,6 +260,13 @@
     .about-content p{
         width: 100%;
         font-size: 14px;
+    }
+
+    .each{
+        padding: 0 1.5rem;
+        /* max-height: 0; */
+        /* overflow: hidden; */
+        /* transition: 500ms ease-in-out; */
     }
 
     .grid{

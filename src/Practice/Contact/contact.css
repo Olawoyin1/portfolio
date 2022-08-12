@@ -14,7 +14,9 @@
 
 .body.dark .contact-me{
     
-    background-image: linear-gradient(30deg, #141e30 30%, #0a0d14 100% );
+    background-image: linear-gradient(90deg, #263756b8 30%, #06070a8e 100% );
+
+    
 }
 
 
@@ -183,6 +185,7 @@ form{
     .flex{
         flex-direction: column;
         height: fit-content;
+        border-radius: 3rem;
     }
 
     .connect{

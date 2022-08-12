@@ -1,48 +1,53 @@
 import React from 'react'
 import './about.css'
-// import Skill from './Skill'
-// import Skills from './Frontend'
-// import Backend from './Backend'
-// import BackSkill from './BackSkill'
+import Skill from './Skill'
+import Skills from './Frontend'
+import Backend from './Backend'
+import BackSkill from './BackSkill'
 import Stacks from './All'
-import Stack from './stack'
+// import Stack from './stack'
 
 export default function About() {
 
   const [toggle, setToggle] = React.useState(true)
+  const [toggle2, setToggle2] = React.useState(true)
 
   const handleToggle = () =>{
-    setToggle(!toggle)
+    setToggle(prev => !prev)
+  }
+  
+  const handleToggle2 = () =>{
+    setToggle2(prev => !prev)
   }
 
-  const AllStack = Stacks.map(stack => {
+  // const AllStack = Stacks.map(stack => {
+  //   return(
+  //     <Stack
+  //       key={stack.id}
+  //       {...stack}
+  //       handleToggle = {handleToggle}
+  //       toggle = {toggle}
+  //     />
+  //   )
+  // })
+
+  const All = Skills.map(skill => {
     return(
-      <Stack
-        key={stack.id}
-        {...stack}
-        handleToggle = {handleToggle}
-        toggle = {toggle}
+      <Skill 
+        key={skill.id}
+        {...skill}
       />
     )
   })
 
-  // const All = Skills.map(skill => {
-  //   return(
-  //     <Skill 
-  //       key={skill.id}
-  //       {...skill}
-  //     />
-  //   )
-  // })
-
-  // const AllBackend = Backend.map(skill => {
-  //   return(
-  //     <BackSkill 
-  //       key={skill.id}
-  //       {...skill}
-  //     />
-  //   )
-  // })
+  const AllBackend = Backend.map(skill => {
+    return(
+      <BackSkill 
+        key={skill.id}
+        {...skill}
+      />
+    )
+  })
 
   return (
     <div id='about' className='about-page'>
@@ -77,7 +82,7 @@ export default function About() {
             </div>
 
             <div className="skills">
-              {/* <div className="frontend">
+              <div className="frontend">
                 <div className="skill-header">
                   <div className="stack">
                     <i class="uil uil-brackets-curly"></i>
@@ -85,7 +90,7 @@ export default function About() {
                   </div>
                   <i className={toggle ? "uil uil-angle-down rotate" : "uil uil-angle-down"} onClick={handleToggle}></i>
                 </div>
-                {toggle && <div className={toggle ? "each show" : "each"}>
+                {!toggle && <div className={toggle ? "each show" : "each"}>
                   {All}
                 </div>}
               </div>
@@ -96,13 +101,17 @@ export default function About() {
                     <i class="uil uil-server-connection"></i>
                     <h3>Backend Developer</h3>
                   </div>
-                  <i className={toggle ? "uil uil-angle-down rotate" : "uil uil-angle-down"} onClick={handleToggle}></i>
+                  <i className={toggle2 ? "uil uil-angle-down rotate" : "uil uil-angle-down"} onClick={handleToggle2}></i>
                 </div>
-                <div className="each">
+                {!toggle2 && <div className={toggle2 ? "each show" : "each"}>
                   {AllBackend}
-                </div>
-              </div> */}
-              {AllStack}
+                  </div>}
+              </div>
+
+              {/* other way round will get back to it later */}
+              {/* {AllStack} */}
+
+
             </div>
 
           </div>
