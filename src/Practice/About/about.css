@@ -258,6 +258,15 @@
         grid-template-columns: 1fr;
     }
 
+    .transparent.first{
+        top: 0;
+        left: -3rem;
+    }
+
+    .transparent.second{
+        display: none;
+    }
+
     .transparent.third{
         bottom: 0;
         right: 1rem;
