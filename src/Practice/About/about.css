@@ -1,29 +1,207 @@
 .about-page{
-    height: 100vh;
+    min-height: 100vh;
     background: rgb(238,174,202);
-    background-image: linear-gradient(0deg, #d9afd9a2 0%, #c7ee9e5b 100%);
-    clip-path: polygon(18% 3%, 100% 0, 100% 100%, 0 100%, 0 0);
-    backdrop-filter: blur(2rem);
-
-    display: grid;
-    place-content: center;
-
-
+    /* display: grid;
+    place-content: center; */
     background: linear-gradient(10deg, #7ee7faae 0%, #eec0c6d1 100%);
-
     clip-path: polygon(21% 4%, 100% 0, 100% 100%, 82% 96%, 0 100%, 0 0);
+    position: relative;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 
 
 
+}
 
+.transparent{
+    /* border: 1px solid red; */
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    backdrop-filter: blur(1rem);
+    border-radius: 1rem;
+    box-shadow: 1px 0.5px 1px rgba(0, 0, 0, 0.192);
+    /* z-index: -1; */
+}
+
+
+.transparent.first{
+    left: 2rem;
+    top: 2rem;
+
+}
+
+
+.transparent.second{
+    right: 5rem;
+    top: 5rem;
+}
+
+.grid{
+    /* border: 1px solid red; */
+    width: 85%;
+    min-height: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* border: 2px solid green; */
+}
+
+.grid *{
+    /* border: 2px solid green; */
+}
+
+.about-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    z-index: 1000;
+}
+
+.about-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.about-content p{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.experience{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn.download{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.animated-icon{
+    animation: moveIcon 3s  infinite;
+    /* display: none; */
+    font-size: 1rem;
+}
+
+.bold{
+    font-size: 2rem;
+    font-family: raleway;
+}
+
+.raleway{
+    
+    font-family: raleway;
+}
+
+.muted{
+    opacity: 0.7;
+    /* font-family: raleway; */
+    /* font-size: small; */
+}
+
+
+
+.about-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    z-index: 1000;
+    flex-direction: column;
+}
+
+.skill-content{
+    display: flex;
+    /* background-color: red; */
+    flex-direction: column;
+    width: 80%;
+    /* gap: 1.2rem; */
+}
+
+.header{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.frontend{
+    /* border: 1px solid red; */
 }
 
 
 
 
 
+.stack{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
 
+.skill-header{
+    padding: 0.6rem;
+}
 
+.each{
+    padding-left: 2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: 500ms ease-in-out;
+}
+
+.each.show{
+    max-height: fit-content;
+}
+
+.skill-header,
+.lang{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.level{
+    height: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.roll{
+    background-image: linear-gradient(20deg, #dc6b6b, #845de1);
+    height: 100%;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.uil-angle-down{
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 500ms ease-in-out;
+}
+
+.uil-angle-down.rotate{
+    transform: rotate(180deg);
+}
+
+.all{
+    /* border: 1px solid red; */
+    margin-bottom: 8px;
+    width: 100%;
+}
 
 
 
@@ -66,5 +244,35 @@
     .about-page{
         min-height: 45vh;
         /* background-color: red; */
+        padding: 3rem 0;
     }
+}
+
+@media (max-width: 700px){
+    .about-content p{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .grid{
+        grid-template-columns: 1fr;
+    }
+
+    .transparent.third{
+        bottom: 0;
+        right: 1rem;
+    }
+
+    .transparent.second{
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+
+@media (max-width: 500px){
+    .skill-content{
+        width: 100%;
+    }
+
 }

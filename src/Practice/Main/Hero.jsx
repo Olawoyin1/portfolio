@@ -14,23 +14,19 @@ export default function Hero() {
                 <a href='#contact_me' className='btn btn-con'>Let's Connect <i class="uil uil-arrow-circle-right"></i></a>
 
                 <div className="socials">
-                    <a href='#'>
-                        {/* <i className="uil uil-github"></i> */}
+                    <a href='https://github.com/Olawoyin1'>
                         <img src="../../images/github.png" alt="" />
                         <span> Github</span>
                     </a>
                     <a href='#'>
-                        {/* <i className="uil uil-linkedin"></i> */}
                         <img src="../../images/linkedin.png" alt="" />
                         <span> LinkedIn</span>
                     </a>
-                    <a href='#'>
-                        {/* <i className="uil uil-instagram"></i>  */}
+                    <a href='https://www.instagram.com/olawoyin_gbolahan/'>
                         <img src="../../images/instagram.png" alt="" />
                         <span>Instagram</span>
                     </a>
-                    <a href='#'>
-                        {/* <i className="uil uil-twitter"></i>  */}
+                    <a href='https://twitter.com/olawoyinGbolah3'>
                         <img src="../../images/twitter.png" alt="" />
                         <span>Twitter</span>
                     </a>
