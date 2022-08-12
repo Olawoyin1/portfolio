@@ -23,7 +23,8 @@
     position: absolute;
     backdrop-filter: blur(1rem);
     border-radius: 1rem;
-    box-shadow: 1px 0.5px 1px rgba(0, 0, 0, 0.192);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.192);
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.104), 5px 5px 10px rgba(70,70,70,0.12);
     /* z-index: -1; */
 }
 
@@ -38,6 +39,12 @@
 .transparent.second{
     right: 5rem;
     top: 5rem;
+}
+
+.transparent.third{
+    bottom: 10rem;
+    
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.104),inset 5px 5px 10px rgba(70, 70, 70, 0.059);
 }
 
 .grid{
@@ -158,14 +165,11 @@
 
 .each{
     padding-left: 2rem;
-    max-height: 0;
-    overflow: hidden;
-    transition: 500ms ease-in-out;
+    /* max-height: 0; */
+    /* overflow: hidden; */
+    /* transition: 500ms ease-in-out; */
 }
 
-.each.show{
-    max-height: fit-content;
-}
 
 .skill-header,
 .lang{
@@ -183,7 +187,7 @@
 .roll{
     background-image: linear-gradient(20deg, #dc6b6b, #845de1);
     height: 100%;
-    width: 80%;
+    /* width: 80%; */
     border-radius: 10px;
 }
 

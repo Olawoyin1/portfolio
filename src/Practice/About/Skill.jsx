@@ -1,6 +1,12 @@
 import React from 'react'
 
 export default function Skill({language, level}) {
+
+  // const styles = {
+  //   width: level
+  //  ' backgroundColor': "red"
+  // }
+
   return (
     <div className='all'>
         <div className="lang">
@@ -8,7 +14,7 @@ export default function Skill({language, level}) {
             <p className='raleway'>{level}</p>
         </div>
         <div className="level">
-            <div className="roll"></div>
+            <div className="roll" ></div>
         </div>
     </div>
   )

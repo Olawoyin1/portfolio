@@ -2,8 +2,10 @@ import React from 'react'
 import './about.css'
 import Skill from './Skill'
 import Skills from './Frontend'
-import Backend from './Backend'
-import BackSkill from './BackSkill'
+// import Backend from './Backend'
+// import BackSkill from './BackSkill'
+import Stacks from './All'
+import Stack from './stack'
 
 export default function About() {
 
@@ -13,21 +15,34 @@ export default function About() {
     setToggle(!toggle)
   }
 
+  const AllStack = Stacks.map(stack => {
+    return(
+      <Stack
+        key={stack.id}
+        {...stack}
+        handleToggle = {handleToggle}
+        toggle = {toggle}
+      />
+    )
+  })
+
   const All = Skills.map(skill => {
     return(
       <Skill 
+        key={skill.id}
         {...skill}
       />
     )
   })
 
-  const AllBackend = Backend.map(skill => {
-    return(
-      <BackSkill 
-        {...skill}
-      />
-    )
-  })
+  // const AllBackend = Backend.map(skill => {
+  //   return(
+  //     <BackSkill 
+  //       key={skill.id}
+  //       {...skill}
+  //     />
+  //   )
+  // })
 
   return (
     <div id='about' className='about-page'>
@@ -62,7 +77,7 @@ export default function About() {
             </div>
 
             <div className="skills">
-              <div className="frontend">
+              {/* <div className="frontend">
                 <div className="skill-header">
                   <div className="stack">
                     <i class="uil uil-brackets-curly"></i>
@@ -86,7 +101,8 @@ export default function About() {
                 <div className="each">
                   {AllBackend}
                 </div>
-              </div>
+              </div> */}
+              {AllStack}
             </div>
 
           </div>

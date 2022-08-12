@@ -18,7 +18,7 @@ export default function Hero() {
                         <img src="../../images/github.png" alt="" />
                         <span> Github</span>
                     </a>
-                    <a href='#'>
+                    <a href='https://www.linkedin.com/in/yusuf-olawoyin-307287228/'>
                         <img src="../../images/linkedin.png" alt="" />
                         <span> LinkedIn</span>
                     </a>
