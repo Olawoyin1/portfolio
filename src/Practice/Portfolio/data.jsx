@@ -74,7 +74,7 @@ const data = [
         id: 11,
         name: "Blog web",
         link : "Action",
-        image: "../../Images/U-secured.png",
+        image: "../../Images/Blog.png",
         desc: "Fashion and Lifestyle blog created with HTML , CSS and Javascript"
     }
 ]

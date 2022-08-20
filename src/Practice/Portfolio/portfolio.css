@@ -71,15 +71,10 @@
 }
 
 
-.swiper-pagination{
-  margin-top: 10rem;
-  /* bottom: -10px !important; */
-  position: fixed !important;
-  /* top: 0; */
-  bottom: -10px !important;
-  z-index: 1000;
-  border: 1px solid red;
-  display: none;
+.my-custom-pagination-div{
+  /* margin: 0 auto;
+  border: 1px solid red; */
+  text-align: center;
 }
 
 

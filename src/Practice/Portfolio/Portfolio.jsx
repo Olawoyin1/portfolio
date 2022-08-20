@@ -40,7 +40,11 @@ export default function Portfolio() {
             slideShadows: true,
             }}
             pagination={{
-              clickable: true
+              el: '.my-custom-pagination-div',
+              clickable: true,
+              renderBullet: (index, className) => {
+               return '<span class="' + className + '">' + "</span>";
+              },
             }}
             modules={[EffectCoverflow, Pagination]}
             className="mySwiper"
@@ -63,6 +67,8 @@ export default function Portfolio() {
           </SwiperSlide>)
         })}
       </Swiper>
+
+      <div class="my-custom-pagination-div" />
     
     </div>
   )
