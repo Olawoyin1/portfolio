@@ -5,6 +5,7 @@ import Skills from './Frontend'
 import Backend from './Backend'
 import BackSkill from './BackSkill'
 import Stacks from './All'
+import { motion } from 'framer-motion'
 // import Stack from './stack'
 
 export default function About() {
@@ -82,31 +83,32 @@ export default function About() {
             </div>
 
             <div className="skills">
-              <div className="frontend">
-                <div className="skill-header">
+
+              <motion.div layout transition={{type: "spring" , stiffness: "150"}} className="frontend">
+                <motion.div layout="position" className="skill-header">
                   <div className="stack">
                     <i class="uil uil-brackets-curly"></i>
                     <h3>Frontend Developer</h3>
                   </div>
                   <i className={toggle ? "uil uil-angle-down rotate" : "uil uil-angle-down"} onClick={handleToggle}></i>
-                </div>
-                {!toggle && <div className={toggle ? "each show" : "each"}>
+                </motion.div>
+                {!toggle && <motion.div initial={{x: "100vw"}} animate={{x: 0}} transition={{duration: 0.5, type: "spring"}} className={toggle ? "each show" : "each"}>
                   {All}
-                </div>}
-              </div>
+                </motion.div>}
+              </motion.div>
              
-              <div className="frontend">
-                <div className="skill-header">
+              <motion.div layout transition={{type: "spring" , stiffness: "150"}} className="frontend">
+                <motion.div layout="position" className="skill-header">
                   <div className="stack">
                     <i class="uil uil-server-connection"></i>
                     <h3>Backend Developer</h3>
                   </div>
                   <i className={toggle2 ? "uil uil-angle-down rotate" : "uil uil-angle-down"} onClick={handleToggle2}></i>
-                </div>
-                {!toggle2 && <div className={toggle2 ? "each show" : "each"}>
+                </motion.div>
+                {!toggle2 && <motion.div  initial={{x: "100vw"}} animate={{x: 0}} transition={{duration: 0.5, type: "spring"}} className={toggle2 ? "each show" : "each"}>
                   {AllBackend}
-                  </div>}
-              </div>
+                  </motion.div>}
+              </motion.div>
 
               {/* other way round will get back to it later */}
               {/* {AllStack} */}
