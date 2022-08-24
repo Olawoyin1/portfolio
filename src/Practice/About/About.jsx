@@ -120,9 +120,9 @@ export default function About() {
         </div>
       </div>
 
-      <div className="transparent first"></div>
-      <div className="transparent second"></div>
-      <div className="transparent third"></div>
+      <motion.div drag dragConstraints={{left : 0 , right : 0, bottom : 0, top : 0 }} className="transparent first"></motion.div>
+      <motion.div  drag dragConstraints={{left : 0 , right : 0, bottom : 0, top : 0 }} className="transparent second"></motion.div>
+      <motion.div  drag dragConstraints={{left : 0 , right : 0, bottom : 0, top : 0 }} className="transparent third"></motion.div>
      
     </div>
   )
