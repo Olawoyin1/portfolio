@@ -8,6 +8,40 @@ import Stacks from './All'
 import { motion } from 'framer-motion'
 // import Stack from './stack'
 
+
+const slideIn = {
+  initial : {
+    x : -300,
+    opacity :0 
+  }, 
+  animate : {
+    x : 0,
+    opacity : 1,
+    transition : {
+      delay : 0.7,
+      type : "spring",
+      stiffness : 50, 
+      bounce : 20
+    }
+  }
+}
+
+const secondSlide = {
+  initial : {
+    x : 300,
+    opacity :0 
+  }, 
+  animate : {
+    x : 0,
+    opacity : 1,
+    transition : {
+      delay : 1,
+      type : "spring",
+      stiffness : 20, 
+    }
+  }
+}
+
 export default function About() {
 
   const [toggle, setToggle] = React.useState(true)
@@ -54,7 +88,12 @@ export default function About() {
     <div id='about' className='about-page'>
 
       <div className="grid">
-        <div className="about-left">
+        <motion.div 
+          className="about-left"
+          variants={slideIn}
+          initial="initial"
+          whileInView="animate"
+        >
           <div className="about-content">
             <h1>About Me</h1>
             <p>A web developer with 3+years experience, an excellent reputation of solving problems and improving customer satisfaction with a solid organization skill</p>
@@ -73,9 +112,14 @@ export default function About() {
                   <i class="uil uil-download-alt animated-icon"></i>
               </button>
           </div>
-        </div>
+        </motion.div>
 
-        <div className="about-right">
+        <motion.div 
+          variants={secondSlide}
+          initial="initial"
+          whileInView="animate"
+          className="about-right"
+        >
           <div className="skill-content">
             <div className="header">
               <h1>Skills</h1>
@@ -117,7 +161,7 @@ export default function About() {
             </div>
 
           </div>
-        </div>
+        </motion.div>
       </div>
 
       <motion.div drag dragConstraints={{left : 0 , right : 0, bottom : 0, top : 0 }} className="transparent first"></motion.div>
