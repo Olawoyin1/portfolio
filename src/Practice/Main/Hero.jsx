@@ -12,6 +12,7 @@ const heroLeft = {
         x : 0,
         // opacity : 1,
         transition : {
+            delay : 0.3,
             when : "beforeChildren",
             staggerChildren : 1.1,
             type : "spring",
@@ -46,7 +47,7 @@ const imageVariant = {
         y : 0,
         opacity : 1,
         transition : {
-            delay : 1.5, 
+            delay : 5.5, 
             duration : 1,
             type : "spring", 
             stiffness : 100,

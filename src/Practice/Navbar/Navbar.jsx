@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import './navbar.css'
+import { motion } from 'framer-motion'
 
 export default function Navbar({toggle, handleToggle}) {
 
@@ -13,7 +14,22 @@ export default function Navbar({toggle, handleToggle}) {
     }else{
       SetScroll(false)
     }
+    
   })
+
+  const navVariant = {
+    initial : {
+      y : -100,
+      opacity : 0 
+    },
+    animate : {
+      y : 0,
+      opacity : 1,
+      transition : {
+        type : "spring"
+      }
+    }
+  }
 
 
 
@@ -30,7 +46,12 @@ export default function Navbar({toggle, handleToggle}) {
  
 
   return (
-    <div className={scroll ? "nav scrolled" : "nav" } >
+    <motion.div
+      className={scroll ? "nav scrolled" : "nav" }
+      variants={navVariant}
+      initial="initial"
+      animate="animate"
+    >
       <nav >
 
         <div className="mail">
@@ -75,6 +96,6 @@ export default function Navbar({toggle, handleToggle}) {
         </button>
 
       </nav>
-    </div>
+    </motion.div>
   )
 }
