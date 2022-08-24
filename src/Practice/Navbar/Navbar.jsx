@@ -23,10 +23,13 @@ export default function Navbar({toggle, handleToggle}) {
       opacity : 0 
     },
     animate : {
-      y : 0,
+      y : [0 , 100, 0],
       opacity : 1,
       transition : {
-        type : "spring"
+        type : "spring",
+        duration : 1,
+        stifness : 150,
+        bounce : 100
       }
     }
   }

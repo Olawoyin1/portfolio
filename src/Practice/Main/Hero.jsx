@@ -12,9 +12,9 @@ const heroLeft = {
         x : 0,
         // opacity : 1,
         transition : {
-            delay : 0.3,
+            delay : 1,
             when : "beforeChildren",
-            staggerChildren : 1.1,
+            staggerChildren : 1.2,
             type : "spring",
             stiffness : 100
         }
@@ -28,8 +28,8 @@ const childrenVariant = {
         y : 40
     },
     animate : {
-        opacity : 1,
         y : 0,
+        opacity : 1,
         transition : {
             duration : 0.3,
             type : "spring",
@@ -47,7 +47,7 @@ const imageVariant = {
         y : 0,
         opacity : 1,
         transition : {
-            delay : 5.5, 
+            delay : 6.5, 
             duration : 1,
             type : "spring", 
             stiffness : 100,
