@@ -1,4 +1,20 @@
 import React from 'react'
+import { motion } from 'framer-motion'
+
+const popup = {
+  initial : {
+    y : -20,
+    opacity : 0
+  },
+  animate : {
+    y : 0,
+    opacity : 1,
+    transition : {
+      type : "spring",
+      stiffness : 400
+    }
+  }
+}
 
 export default function Skill({language, level}) {
 
@@ -12,7 +28,10 @@ export default function Skill({language, level}) {
   
 
   return (
-    <div className='all'>
+    <motion.div 
+      className='all'
+      variants={popup}
+    >
         <div className="lang">
             <h3>{language}</h3>
             <p className='raleway'>{level}</p>
@@ -20,6 +39,6 @@ export default function Skill({language, level}) {
         <div className="level">
             <div className="roll" style={styles}></div>
         </div>
-    </div>
+    </motion.div>
   )
 }

@@ -2,7 +2,7 @@ const data = [
     {
         id: 1,
         name: "Modal",
-        link : "Sport",
+        link : "https://olawoyin-modal.netlify.app/",
         image: "../../Images/Modal.png",
         desc: "Modal Popup | UI element that appears in the foreground of a website",
         price: "$1,200.00"
@@ -10,49 +10,49 @@ const data = [
     {
         id: 2,
         name: "Accordion",
-        link : "Adventure",
+        link : "https://olawoyin-accordion.netlify.app/",
         image: "../../Images/Accordion.png",
         desc: "Useful when when you want to toggle between hiding and showing large amount of content."
     },
     {
         id: 3,
         name: "Four Cards",
-        link : "Sport",
+        link : "https://olawoyin-fourcards.netlify.app/",
         image: "../../Images/Four-cards.png",
         desc: "Frontend Mentor Challenge | Four card feature section"
     },
     {
         id: 4,
         name: "Learning Website",
-        link : "Sport",
+        link : "https://frenchlearningweb.netlify.app/",
         image: "../../Images/Learning-web.png",
         desc:"French Learning website created using CSS Grid."
     },
     {
         id: 5,
         name: "Component Signup",
-        link : "Racing",
+        link : "https://component-signup.netlify.app/",
         image: "../../Images/Component-signup.png",
         desc: "Frontend Mentor Challenge | Intro component with sign up form"
     },
     {
         id: 6,
         name: "Redmi Note 9s Control Panel",
-        link : "Action",
+        link : "https://redmi9s.netlify.app/",
         image: "../../Images/Redmi.png",
         desc: "Redmi Note 9s control panel craeted with HTML, CSS and JAVASCRIPT."
     },
     {
         id: 7,
         name: "Sign up form + Validation",
-        link : "Action",
+        link : "https://user-reg-validation.netlify.app/",
         image: "../../Images/Form.png",
         desc: "User registration with Form validation using Javascript"
     },
     {
         id: 8,
         name: "Counter App",
-        link : "Racing",
+        link : "https://olawoyin-counterapp.netlify.app/",
         image: "../../Images/Counter-app.png",
         desc: "Javascript Counter Application."
     },
@@ -73,7 +73,7 @@ const data = [
     {
         id: 11,
         name: "Blog web",
-        link : "Action",
+        link : "https://mozanbinova.netlify.app",
         image: "../../Images/Blog.png",
         desc: "Fashion and Lifestyle blog created with HTML , CSS and Javascript"
     }

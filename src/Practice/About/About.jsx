@@ -42,6 +42,21 @@ const secondSlide = {
   }
 }
 
+const skillsVar = {
+  initial : {
+    x : "100vw",
+  },
+  animate : {
+    x : 0,
+    transition : {
+      duration: 0.5, 
+      type: "spring",
+      when : "beforeChildren" ,
+      staggerChildren : 1
+    }
+  }
+}
+
 export default function About() {
 
   const [toggle, setToggle] = React.useState(true)
@@ -136,7 +151,12 @@ export default function About() {
                   </div>
                   <i className={toggle ? "uil uil-angle-down rotate" : "uil uil-angle-down"} onClick={handleToggle}></i>
                 </motion.div>
-                {!toggle && <motion.div initial={{x: "100vw"}} animate={{x: 0}} transition={{duration: 0.5, type: "spring"}} className={toggle ? "each show" : "each"}>
+                {!toggle && <motion.div 
+                  className={toggle ? "each show" : "each"}
+                  variants={skillsVar}
+                  initial="initial"
+                  animate="animate"
+                >
                   {All}
                 </motion.div>}
               </motion.div>
@@ -149,7 +169,12 @@ export default function About() {
                   </div>
                   <i className={toggle2 ? "uil uil-angle-down rotate" : "uil uil-angle-down"} onClick={handleToggle2}></i>
                 </motion.div>
-                {!toggle2 && <motion.div  initial={{x: "100vw"}} animate={{x: 0}} transition={{duration: 0.5, type: "spring"}} className={toggle2 ? "each show" : "each"}>
+                {!toggle2 && <motion.div  
+                  className={toggle2 ? "each show" : "each"}
+                  variants={skillsVar}
+                  initial="initial"
+                  animate="animate"
+                >
                   {AllBackend}
                   </motion.div>}
               </motion.div>
