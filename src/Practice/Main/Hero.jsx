@@ -56,6 +56,29 @@ const imageVariant = {
     }
 }
 
+
+const rotate = {
+    initial : {
+        scale : 0 ,
+        rotate : [0 , 180, 90, 0],
+        // borderRadius : "50%",
+        opacity : 0
+    },
+    animate : {
+        opacity : 1,
+        scale : 1,
+        rotate : [0 , -360, 360],
+        borderRadius : "0%",
+        transition : {
+            yoyo : "5",
+            // delay:8,
+            duration : 2,
+            type : "spring",
+            ease : "easeInOut"
+        }
+    }
+}
+
 export default function Hero() {
   return (
     <div className="main" id='home'>
@@ -92,19 +115,32 @@ export default function Hero() {
                     className="socials"
                 >
                     <a href='https://github.com/Olawoyin1'>
-                        <img src="../../images/github.png" alt="" />
+                        <motion.img
+                            variants={rotate}
+                            // initial="initial"
+                            whileHover="animate"
+                            src="../../images/github.png" alt="" />
                         <span> Github</span>
                     </a>
                     <a href='https://www.linkedin.com/in/yusuf-olawoyin-307287228/'>
-                        <img src="../../images/linkedin.png" alt="" />
+                        <motion.img
+                            variants={rotate}
+                            whileHover="animate"
+                            src="../../images/linkedin.png" alt="" />
                         <span> LinkedIn</span>
                     </a>
                     <a href='https://www.instagram.com/olawoyin_gbolahan/'>
-                        <img src="../../images/instagram.png" alt="" />
+                        <motion.img
+                            variants={rotate}
+                            whileHover="animate"
+                            src="../../images/instagram.png" alt="" />
                         <span>Instagram</span>
                     </a>
                     <a href='https://twitter.com/olawoyinGbolah3'>
-                        <img src="../../images/twitter.png" alt="" />
+                        <motion.img
+                            variants={rotate}
+                            whileHover="animate"
+                            src="../../images/twitter.png" alt="" />
                         <span>Twitter</span>
                     </a>
                 </motion.div>

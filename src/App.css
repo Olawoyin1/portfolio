@@ -69,6 +69,35 @@ html{
     background: linear-gradient(10deg, #7ee7faae 0%, #eec0c6d1 100%);
 }
 
+.newLoad{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rotating {
+    width: 2rem;
+    height: 2rem;
+    background: linear-gradient(10deg, #7ee7faae 0%, #eec0c6d1 100%);    
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.104), 5px 5px 10px rgba(70,70,70,0.12);
+}
+
+.three{
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+    justify-content: center;
+}
+
+.dot{
+    width: 15px;
+    height: 15px;
+    background: linear-gradient(10deg, #7ee7faae 0%, #eec0c6d1 100%);    
+    box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.104), 5px 5px 10px rgba(70,70,70,0.12);
+    border-radius: 50%;
+    background-color: red;
+}
 
 
 
