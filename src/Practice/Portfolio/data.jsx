@@ -1,18 +1,17 @@
 const data = [
     {
         id: 1,
-        name: "Modal",
-        link : "https://olawoyin-modal.netlify.app/",
-        image: "../../Images/Modal.png",
-        desc: "Modal Popup | UI element that appears in the foreground of a website",
-        price: "$1,200.00"
+        name: "Profile Card",
+        link : "https://olawoyin-profile-card.netlify.app/",
+        image: "../../Images/Profile-card.png",
+        desc: "Frontend Mentor Challenge | Profile card component"
     },
     {
         id: 2,
-        name: "Accordion",
-        link : "https://olawoyin-accordion.netlify.app/",
-        image: "../../Images/Accordion.png",
-        desc: "Useful when when you want to toggle between hiding and showing large amount of content."
+        name: "Blog web",
+        link : "https://mozanbinova.netlify.app",
+        image: "../../Images/Blog.png",
+        desc: "Fashion and Lifestyle blog created with HTML , CSS and Javascript"
     },
     {
         id: 3,
@@ -58,10 +57,11 @@ const data = [
     },
     {
         id: 9,
-        name: "Profile Card",
-        link : "Action",
-        image: "../../Images/Profile-card.png",
-        desc: "Frontend Mentor Challenge | Profile card component"
+        name: "Modal",
+        link : "https://olawoyin-modal.netlify.app/",
+        image: "../../Images/Modal.png",
+        desc: "Modal Popup | UI element that appears in the foreground of a website",
+        price: "$1,200.00"
     },
     {
         id: 10,
@@ -72,10 +72,10 @@ const data = [
     },
     {
         id: 11,
-        name: "Blog web",
-        link : "https://mozanbinova.netlify.app",
-        image: "../../Images/Blog.png",
-        desc: "Fashion and Lifestyle blog created with HTML , CSS and Javascript"
+        name: "Accordion",
+        link : "https://olawoyin-accordion.netlify.app/",
+        image: "../../Images/Accordion.png",
+        desc: "Useful when when you want to toggle between hiding and showing large amount of content."
     }
 ]
 

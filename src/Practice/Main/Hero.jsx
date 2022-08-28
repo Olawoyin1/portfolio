@@ -70,7 +70,7 @@ const rotate = {
         rotate : [0 , -360, 360],
         borderRadius : "0%",
         transition : {
-            yoyo : "5",
+            // yoyo : "5",
             // delay:8,
             duration : 2,
             type : "spring",
