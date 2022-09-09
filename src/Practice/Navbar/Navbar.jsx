@@ -80,7 +80,7 @@ export default function Navbar({toggle, handleToggle}) {
             <a href="#contact_me" className={active === 'contact' ? "links contact active" : "links contact"} onClick={() => handeNav('contact')}>Contact Me</a>
           </li>
           <div className={toggle ? "toggle active" : "toggle"}>
-            <i class="uil uil-brightness"></i>
+            <i className="uil uil-brightness"></i>
             <i className="uil uil-moon"></i>
             <div className={toggle ? "scroll active" : "scroll"} onClick={handleToggle}></div>
           </div>
@@ -89,7 +89,7 @@ export default function Navbar({toggle, handleToggle}) {
         </ul>
 
         <div className={toggle ? "toggle active mobile" : "toggle mobile"}>
-          <i class="uil uil-brightness"></i>
+          <i className="uil uil-brightness"></i>
           <i className="uil uil-moon"></i>
           <div className={toggle ? "scroll active" : "scroll"} onClick={handleToggle}></div>
         </div>

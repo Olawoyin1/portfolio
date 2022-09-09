@@ -124,7 +124,7 @@ export default function About() {
             </div>
             <button type='submit' className='btn download'>
                   <span>Download CV</span> 
-                  <i class="uil uil-download-alt animated-icon"></i>
+                  <i className="uil uil-download-alt animated-icon"></i>
               </button>
           </div>
         </motion.div>
@@ -146,7 +146,7 @@ export default function About() {
               <motion.div layout transition={{type: "spring" , stiffness: "150"}} className="frontend">
                 <motion.div layout="position" className="skill-header">
                   <div className="stack">
-                    <i class="uil uil-brackets-curly"></i>
+                    <i className="uil uil-brackets-curly"></i>
                     <h3>Frontend Developer</h3>
                   </div>
                   <i className={toggle ? "uil uil-angle-down rotate" : "uil uil-angle-down"} onClick={handleToggle}></i>
@@ -164,7 +164,7 @@ export default function About() {
               <motion.div layout transition={{type: "spring" , stiffness: "150"}} className="frontend">
                 <motion.div layout="position" className="skill-header">
                   <div className="stack">
-                    <i class="uil uil-server-connection"></i>
+                    <i className="uil uil-server-connection"></i>
                     <h3>Backend Developer</h3>
                   </div>
                   <i className={toggle2 ? "uil uil-angle-down rotate" : "uil uil-angle-down"} onClick={handleToggle2}></i>

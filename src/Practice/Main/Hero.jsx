@@ -108,7 +108,7 @@ export default function Hero() {
                     variants={childrenVariant}  
                     href='#contact_me' 
                     className='btn btn-con'
-                >Let's Connect <i class="uil uil-arrow-circle-right"></i></motion.a>
+                >Let's Connect <i className="uil uil-arrow-circle-right"></i></motion.a>
 
                 <motion.div     
                     variants={childrenVariant} 

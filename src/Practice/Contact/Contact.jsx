@@ -47,7 +47,7 @@ export default function Contact() {
               </div>
               <button type='submit' className='btn send'>
                   <p>Send</p> 
-                  <i class="uil uil-angle-double-right animated-icon"></i>
+                  <i className="uil uil-angle-double-right animated-icon"></i>
               </button>
             </form>
           </div>

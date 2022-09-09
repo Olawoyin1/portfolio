@@ -8,15 +8,37 @@ export default function Loading() {
         alignItems : "center",
         justifyContent : "center"
     }
-
+    
     const variant = {
         animate : {
             x : [5, 40],
             // y : [0 , -30],
             transition : {
-               x : {
+                x : {
+                    yoyo : "Infinity",
+                    duration : 0.5,
+                    // staggerChildren : 1.4
+            },
+            y : {
                 yoyo : "Infinity",
-                duration : 0.5
+                duration : 0.25
+               }
+            }
+           
+        }
+            
+    }
+    
+    
+    const variant2 = {
+        animate : {
+            x : [40, 5],
+            // y : [0 , -30],
+            transition : {
+                x : {
+                    yoyo : "Infinity",
+                    duration : 0.5,
+                    // staggerChildren : 1.4
             },
             y : {
                 yoyo : "Infinity",
@@ -72,45 +94,50 @@ export default function Loading() {
     }
 
   return (
-    // <div style={styles}>
-    //     Loading
-    //     <motion.div
-    //         className='long'
-    //         variants={variant}
-    //         animate="animate"
-    //     ></motion.div>
-    // </div>
-    
-    <div className="newLoad">
-
-        <motion.div 
-            className='rotating'
-            variants={newLoad}
-            initial="initial"
+    <div style={styles}>
+        Loading
+        <motion.div
+            className='long'
+            variants={variant}
             animate="animate"
         ></motion.div>
-
-        {/* <motion.div
-         className="three"
-         variants={three}
-         animate="animate"
-        >
-            
-            <motion.div
-             className="dot"
-             variants={toggle}
-             ></motion.div>
-            <motion.div
-             className="dot"
-             variants={toggle}
-             ></motion.div>
-            <motion.div
-             className="dot"
-             variants={toggle}
-            ></motion.div>
-        </motion.div> */}
-
-
+        <motion.div
+            className='long2'
+            variants={variant2}
+            animate="animate"
+        ></motion.div>
     </div>
+    
+    // <div className="newLoad">
+
+    //     <motion.div 
+    //         className='rotating'
+    //         variants={newLoad}
+    //         initial="initial"
+    //         animate="animate"
+    //     ></motion.div>
+
+    //     <motion.div
+    //      className="three"
+    //      variants={three}
+    //      animate="animate"
+    //     >
+            
+    //         <motion.div
+    //          className="dot"
+    //          variants={toggle}
+    //          ></motion.div>
+    //         <motion.div
+    //          className="dot"
+    //          variants={toggle}
+    //          ></motion.div>
+    //         <motion.div
+    //          className="dot"
+    //          variants={toggle}
+    //         ></motion.div>
+    //     </motion.div>
+
+
+    // </div>
   )
 }
