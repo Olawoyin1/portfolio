@@ -115,7 +115,7 @@ export default function Portfolio() {
               el: '.my-custom-pagination-div',
               clickable: true,
               renderBullet: (index, className) => {
-               return '<span className="' + className + '">' + "</span>";
+               return '<span class="' + className + '">' + "</span>";
               },
             }}
             modules={[EffectCoverflow, Pagination]}
