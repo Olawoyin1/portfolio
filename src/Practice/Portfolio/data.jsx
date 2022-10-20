@@ -1,11 +1,12 @@
 const data = [
     {
         id: 1,
-        name: "Profile Card",
-        link : "https://olawoyin-profile-card.netlify.app/",
-        image: "../../Images/Profile-card.png",
-        desc: "Frontend Mentor Challenge | Profile card component"
+        name: "User Registration + CRUD",
+        link : "https://github.com/Olawoyin1/User-Registration---CRUD-Operation",
+        image: "../../Images/crud.png",
+        desc: "User registration + CRUD operation using PHP and mySQL"
     },
+
     {
         id: 2,
         name: "Blog web",
@@ -76,7 +77,14 @@ const data = [
         link : "https://olawoyin-accordion.netlify.app/",
         image: "../../Images/Accordion.png",
         desc: "Useful when when you want to toggle between hiding and showing large amount of content."
-    }
+    },
+    {
+        id: 12,
+        name: "Profile Card",
+        link : "https://olawoyin-profile-card.netlify.app/",
+        image: "../../Images/Profile-card.png",
+        desc: "Frontend Mentor Challenge | Profile card component"
+    },
 ]
 
 export default data
