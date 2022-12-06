@@ -27,6 +27,7 @@ const main = {
     opacity : 1,
     transition : {
       type : "spring",
+      delay: 1,
       when : "beforeChildren",
       staggerChildren : 3
     }
